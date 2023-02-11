@@ -1,0 +1,80 @@
+@import url("./fonts.css");
+*::before,
+*::after,
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	border: none;
+	box-sizing: border-box;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+	color: #000;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+html {
+	font-size: 10px;
+	font-family: var(--fm);
+}
+
+input,
+textarea {
+	padding: 5px 10px;
+}
+
+*::before,
+*::after {
+	display: inline-block;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	width: 1280px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+form > button {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1c1d28;
+	background: #ffd2a4;
+	backdrop-filter: blur(40px);
+	border-radius: 12px;
+	padding: 18px 30px;
+}
+
+form > button:hover {
+	transition: all 0.6s;
+	background: #f2c79b;
+}
+
+::-webkit-scrollbar {
+	background-color: #0d0d0d;
+}
+
+.__white::-webkit-scrollbar-thumb {
+	background-color: #fff;
+	border-radius: 0 5px 5px 0;
+	height: 30px;
+}

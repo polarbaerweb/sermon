@@ -1,0 +1,47 @@
+.header {
+	color: #fff;
+	background-color: aqua;
+}
+.header__background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #0d0d0d;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	z-index: 30;
+}
+.header__container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.header__title {
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 1.4px;
+	margin: 0 100px 0 0;
+}
+.navigation {
+	flex: 1 1 auto;
+}
+.header__menu_list {
+	display: flex;
+	gap: 30px;
+}
+.list__item {
+	background-color: rgba(0, 0, 0, 0);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #ffffff60;
+}
+
+.list__item:hover,
+button:hover {
+	cursor: pointer;
+}
