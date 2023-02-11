@@ -81,4 +81,5 @@ form > button:hover {
 
 *::selection {
 	background-color: #caf0f8;
+	color: #000;
 }
