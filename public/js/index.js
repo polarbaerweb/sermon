@@ -1,9 +1,14 @@
-const scrollItem = document.body
+let scrolling = document.body
+const main = document.querySelector(".main")
+const footer = document.querySelector(".footer")
+const calcullateHeight = main.offsetHeight - footer.offsetHeight - 663
+console.log(calcullateHeight)
 
 window.addEventListener("scroll", function(){
-	if(window.scrollY >= 559.2000122070312){
-		scrollItem.classList.add("__white")
+	if(window.scrollY >= 577.5999755859375 && window.scrollY < calcullateHeight){
+		scrolling.classList.add("__white")
+		console.log(window.scrollY)
 	}else{
-		scrollItem.classList.remove("__white")
+		scrolling.classList.remove("__white")
 	}
 })
